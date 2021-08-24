@@ -1,0 +1,121 @@
+CRITICAL - 2021-08-24 14:49:38 --> Call to a member function setContentType() on null
+#0 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->index()
+#1 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#2 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-08-24 14:50:03 --> Undefined variable: response
+#0 C:\xampp\htdocs\secret\app\Controllers\API.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->index()
+#2 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#3 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-24 15:09:09 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\secret\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\secret\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\secret\system\CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\secret\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-08-24 15:14:07 --> Too few arguments to function CodeIgniter\HTTP\Message::getHeader(), 0 passed in C:\xampp\htdocs\secret\app\Controllers\API.php on line 21 and exactly 1 expected
+#0 C:\xampp\htdocs\secret\app\Controllers\API.php(21): CodeIgniter\HTTP\Message->getHeader()
+#1 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->index()
+#2 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#3 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-24 15:17:52 --> Cannot access protected property CodeIgniter\HTTP\Header::$value
+#0 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->index()
+#1 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#2 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-08-24 15:19:14 --> Array to string conversion
+#0 C:\xampp\htdocs\secret\system\HTTP\ResponseTrait.php(512): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 512, Array)
+#1 C:\xampp\htdocs\secret\system\HTTP\ResponseTrait.php(468): CodeIgniter\HTTP\Response->sendBody()
+#2 C:\xampp\htdocs\secret\app\Controllers\API.php(35): CodeIgniter\HTTP\Response->send()
+#3 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->index()
+#4 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#5 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-08-24 15:41:25 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-08-24 15:41:44 --> Unknown table 'shoprenter.secrets'
+CRITICAL - 2021-08-24 15:58:39 --> Class 'App\Controllers\DateTime' not found
+#0 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->addSecret()
+#1 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#2 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-08-24 16:02:35 --> Object of class DateTime could not be converted to string
+#0 C:\xampp\htdocs\secret\system\Database\Query.php(387): strtr('INSERT INTO `se...', Array)
+#1 C:\xampp\htdocs\secret\system\Database\Query.php(355): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `se...', Array)
+#2 C:\xampp\htdocs\secret\system\Database\Query.php(170): CodeIgniter\Database\Query->compileBinds()
+#3 C:\xampp\htdocs\secret\system\Database\BaseConnection.php(647): CodeIgniter\Database\Query->getQuery()
+#4 C:\xampp\htdocs\secret\system\Database\BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#5 C:\xampp\htdocs\secret\app\Controllers\API.php(93): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->addSecret()
+#7 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#8 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-08-24 23:06:33 --> Object of class DateTime could not be converted to string
+#0 C:\xampp\htdocs\secret\system\Database\Query.php(387): strtr('INSERT INTO `se...', Array)
+#1 C:\xampp\htdocs\secret\system\Database\Query.php(355): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `se...', Array)
+#2 C:\xampp\htdocs\secret\system\Database\Query.php(170): CodeIgniter\Database\Query->compileBinds()
+#3 C:\xampp\htdocs\secret\system\Database\BaseConnection.php(647): CodeIgniter\Database\Query->getQuery()
+#4 C:\xampp\htdocs\secret\system\Database\BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#5 C:\xampp\htdocs\secret\app\Controllers\API.php(98): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->addSecret()
+#7 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#8 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-08-24 23:13:16 --> Undefined property: App\Controllers\API::$db
+#0 C:\xampp\htdocs\secret\app\Controllers\API.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 125, Array)
+#1 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->getSecret('fdgdfgcvcvg')
+#2 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#3 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-24 23:14:05 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->getSecret('fdgdfgcvcvg')
+#1 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#2 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-08-24 23:16:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::row()
+#0 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->getSecret('fdgdfgcvcvg')
+#1 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#2 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-08-24 23:17:46 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::query()
+#0 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->getSecret('fdgdfgcvcvg')
+#1 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#2 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-08-24 23:18:09 --> Not unique table/alias: 'secrets'
+CRITICAL - 2021-08-24 23:18:09 --> Not unique table/alias: 'secrets'
+#0 C:\xampp\htdocs\secret\system\Database\MySQLi\Connection.php(329): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\secret\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\secret\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\secret\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\secret\app\Controllers\API.php(131): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->getSecret('fdgdfgcvcvg')
+#6 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#7 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-08-24 23:23:35 --> Undefined property: stdClass::$secret
+#0 C:\xampp\htdocs\secret\app\Controllers\API.php(146): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 146, Array)
+#1 C:\xampp\htdocs\secret\system\CodeIgniter.php(928): App\Controllers\API->getSecret('b16af9d5fa9e859...')
+#2 C:\xampp\htdocs\secret\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API))
+#3 C:\xampp\htdocs\secret\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\secret\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
