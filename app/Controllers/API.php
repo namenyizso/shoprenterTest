@@ -161,7 +161,8 @@ class API extends BaseController
 	// Ez így nem túl extandable, ahogy a feladat kérte, de így késő este most hirtelen ez jutott eszembe. Lehetne más megoldással is megközelíteni, pl. tömbökbe szervezni, stb
 	private function outputByAcceptHeader($header, $data)
 	{
-		if (strpos($header, 'application/xml') != -1) {
+		// Még gyors módosítás 2021. 08.25. 10.25-kor: típusos egyezéses vizsgálat
+		if (strpos($header, 'application/xml') >= 0 && strpos($header, 'application/xml') !== false) {
 			return $this->response->setXML($data);
 		} else {
 			return $this->response->setJSON($data);
