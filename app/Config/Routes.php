@@ -35,6 +35,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'API::index');
 $routes->post('/secret', 'API::addSecret');
 $routes->get('/secret/(:hash)', 'API::getSecret/$1');
+$routes->get('/secret', 'API::getSecret');
 
 /*
  * --------------------------------------------------------------------
