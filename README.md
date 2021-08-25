@@ -1,4 +1,4 @@
-# CodeIgniter 4 Framework
+# Tesztfeladat - Shoprenter
 
 ## What is CodeIgniter?
 
